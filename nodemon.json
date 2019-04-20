@@ -1,6 +1,6 @@
 {
   "env": {
-    "MONGO_ATLAS_PW": "MxM6pNLYPRYtVJYB",
+    "MONGODB_URL": "mongodb+srv://user:MxM6pNLYPRYtVJYB@cluster0-8vppb.mongodb.net/test?retryWrites=true",
     "JWT_KEY": "secret_this_should_be_longer"
   }
 }

@@ -9,15 +9,10 @@ const userRoutes = require('./routes/user');
 const app = express();
 
 mongoose
-  .connect(
-    `mongodb+srv://user:${
-      process.env.MONGO_ATLAS_PW
-    }@cluster0-8vppb.mongodb.net/test?retryWrites=true`,
-    {
-      useNewUrlParser: true,
-      useCreateIndex: true
-    }
-  )
+  .connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useCreateIndex: true
+  })
   .then(() => {
     console.log('Connected to database!');
   })
