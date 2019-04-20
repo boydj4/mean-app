@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://boydj4-mean-app.herokuapp.com/api'
+  apiUrl: 'http://boydj4-mean-app.herokuapp.com/api'
+  //apiUrl: 'http://localhost:3000/api'
 };
 
 /*
